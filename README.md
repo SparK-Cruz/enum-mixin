@@ -1,0 +1,2 @@
+# enum-mixin
+Enum() mixin
