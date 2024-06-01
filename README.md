@@ -1,5 +1,3 @@
-<!-- <meta name="nano" content="nano_3ntf6crkan6114rfb39d51udqdw4mrbt1x7n8uphx44ojhxcjo3exhk6dsme"/> -->
-
 Package enum-mixin
 ==================
 
@@ -99,5 +97,5 @@ Pay me a coffee:
 ```
 nano_3ntf6crkan6114rfb39d51udqdw4mrbt1x7n8uphx44ojhxcjo3exhk6dsme
 ```
-[Donate](nano:nano_3ntf6crkan6114rfb39d51udqdw4mrbt1x7n8uphx44ojhxcjo3exhk6dsme)
+<nano-donate data-address="nano_3ntf6crkan6114rfb39d51udqdw4mrbt1x7n8uphx44ojhxcjo3exhk6dsme" data-address-owner="Roger &quot;SparK&quot; Cruz"></nano-donate>
 ![nano_3ntf6crkan6114rfb39d51udqdw4mrbt1x7n8uphx44ojhxcjo3exhk6dsme](./donation.png)
