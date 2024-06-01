@@ -87,7 +87,7 @@ class Forced extends Enum() {
 }
 Forced.initialize();
 
-Object.keys(Lazy); // ["one", "two", "three"]
+Object.keys(Forced); // ["one", "two", "three"]
 ```
 
 ## Thanks
