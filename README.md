@@ -1,5 +1,7 @@
-<meta name="nano" content="nano_3ntf6crkan6114rfb39d51udqdw4mrbt1x7n8uphx44ojhxcjo3exhk6dsme"/>
-# enum-mixin
+<!-- <meta name="nano" content="nano_3ntf6crkan6114rfb39d51udqdw4mrbt1x7n8uphx44ojhxcjo3exhk6dsme"/> -->
+
+Package enum-mixin
+==================
 
 Enum mixin for declaring "Java-like" enums.
 
