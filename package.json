@@ -1,0 +1,26 @@
+{
+  "name": "enum-mixin",
+  "version": "1.0.0",
+  "description": "Enum mixin for classes",
+  "type": "commonjs",
+  "main": "index.js",
+  "module": "index.mjs",
+  "scripts": {
+    "test": "node --test -- test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SparK-Cruz/enum-mixin.git"
+  },
+  "keywords": [
+    "Enum",
+    "Mixin",
+    "Class"
+  ],
+  "author": "Roger Cruz <dev.rogercruz@gmail.com>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/SparK-Cruz/enum-mixin/issues"
+  },
+  "homepage": "https://github.com/SparK-Cruz/enum-mixin#readme"
+}
