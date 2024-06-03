@@ -2,12 +2,12 @@
  * @typedef {Object} EnumMember
  * @property {function} toJSON
  * @property {function} toString
- * @property {string} value
+ * @property {string} key
+ * @property {any} value
  */
 
 module.exports = () => {
     let frozen = false;
-    let extended = false;
     let keys = null;
 
     /** @class */
@@ -60,10 +60,8 @@ module.exports = () => {
     };
     return new Proxy(Mixin, {
         get(target, name, cls) {
-            if (!extended && name !== "prototype") {
-                extended = true;
+            if (!frozen && name !== "prototype") {
                 target.initialize.call(cls);
-                return cls[name];
             }
             return target[name];
         }
