@@ -1,5 +1,4 @@
 import { describe, it } from "node:test";
-// import assertLoose from "node:assert";
 import assert from "node:assert/strict";
 import Enum from "../index.mjs";
 
@@ -50,13 +49,36 @@ describe("Enum mixin", () => {
         const NewSubject = class extends Enum() {
             foo;
             bar;
+
+            // initialize
+            static{this._}
         };
 
-        NewSubject.baz = null;
+        let message = null;
+
+        try {
+            NewSubject.baz = new NewSubject();
+            NewSubject.baz.key = "baz";
+            NewSubject.baz.value = "baz";
+        } catch (error) {
+            message = error.message;
+        }
+
         assert(!NewSubject.baz);
+        assert.equal(message, "Cannot create enum value after static initialization");
     });
 
     it("Should be represented by a custom type string on console", async () => {
         assert.equal(Subject.foo.toString(), "[enum Subject(foo)]");
+    });
+
+    it("Should be serialized as a whole as a plain object", async () => {
+        const expected = {
+            foo: "foo",
+            bar: "bar",
+            baz: "lorem",
+        };
+
+        assert.equal(JSON.stringify(Subject), JSON.stringify(expected));
     });
 });

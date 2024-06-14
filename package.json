@@ -1,6 +1,6 @@
 {
   "name": "enum-mixin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Enum mixin for classes",
   "type": "commonjs",
   "main": "index.js",

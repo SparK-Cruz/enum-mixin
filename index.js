@@ -41,6 +41,17 @@ module.exports = () => {
             })];
         }
 
+        static toObject() {
+            return keys.reduce((obj, key) => {
+                obj[key] = this[key].value;
+                return obj;
+            }, {});
+        }
+
+        static toJSON() {
+            return this.toObject();
+        }
+
         static initialize() {
             if (frozen)
                 return;
